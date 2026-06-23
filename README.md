@@ -1,2 +1,2 @@
-# neurachat
-LLM-Based Intelligent Assistant using OpenAI API with conversational memory, real-time chat, and modern web interface.
+# NeuraChat
+LLM-Based Intelligent Assistant built with React.js, Node.js, Express.js, Groq API, and MongoDB Atlas.
