@@ -16,12 +16,16 @@ console.log("NEW SERVER FILE LOADED");
 
 app.listen(PORT, () => {
     console.log(`server running on ${PORT}`);
-    // connectDB();
+    //connectDB();
 });
 
 const connectDB = async() => {
     try {
-        await mongoose.connect(process.env.MONGODB_URI);
+        console.log("MONGODB_URI =", process.env.MONGODB_URI);
+        // await mongoose.connect(process.env.MONGODB_URI);
+        await mongoose.connect(process.env.MONGODB_URI, {
+            family: 4
+        });
         console.log("Connected with Database!");
     } catch(err) {
         console.log("Failed to connect with Db", err);
